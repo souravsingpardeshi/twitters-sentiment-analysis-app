@@ -1,3 +1,4 @@
+#author : Souravsing
 from textblob import TextBlob
 import sys, tweepy
 import matplotlib.pyplot as plt
