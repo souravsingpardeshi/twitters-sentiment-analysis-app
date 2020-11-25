@@ -2,4 +2,3 @@ streamlit
 textblob
 tweepy
 matplotlib
-sys
