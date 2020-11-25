@@ -65,7 +65,7 @@ def cal(searchTerm,noOfSearchTerms):
 def main():
     #st.write("Author:Souravsing S. Pardeshi") 
     st.title("Twitter Sentiment Analysis APP")
-    st.heading("@souravsing ")
+    st.markdown("@souravsing ")
     st.write("Press About Button to know more")
     def local_css(file_name):
         with open(file_name) as f:
