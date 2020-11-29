@@ -66,7 +66,7 @@ def main():
     #st.write("Author:Souravsing S. Pardeshi") 
     st.title("Twitter Sentiment Analysis APP")
     st.markdown("@souravsing ")
-    st.write("Press About Button to know more")
+    st.image("img/demo.gif")
     def local_css(file_name):
         with open(file_name) as f:
             st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
@@ -75,17 +75,19 @@ def main():
     """
     <style>
     .sidebar .sidebar-content {
-    background-image: linear-gradient(#99f2c8,#99f2c8);
-    font-family:cursive;
+    background-image:linear-gradient(#43C6AC,#191654) !important;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    font-family:arial;
     font-weight:900;
-    font-size:30px !important;
-    color: white;
+    font-size:24;
     }
-        </style>
+    </style>
     """,
     unsafe_allow_html=True,
     )
-    dataset_name = st.selectbox("Select which results you want to see :",("All","Positive","Negative"))
+    dataset_name = st.sidebar.selectbox("Select which results you want to see :",("All","Positive","Negative"))
     st.write(dataset_name)
     searchTerm = st.sidebar.text_input("Enter hashtag or string to be searched : ","")
     noOfSearchTerms = st.sidebar.text_input("Choose Number of Tweets to Analyse:")
@@ -93,6 +95,7 @@ def main():
     if st.sidebar.button("predict"):
         result=cal(searchTerm,noOfSearchTerms)
     st.success("Result is : {}".format(result))
+    st.write("Press About Button to know more")
     if st.sidebar.button("About me"):
         st.header("This app is created by Souravsing S. Pardeshi")
         st.write("follow me on github: https://github.com/souravsingpardeshi",":sunglasses:")
