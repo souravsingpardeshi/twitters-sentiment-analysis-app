@@ -92,7 +92,7 @@ def main():
     searchTerm = st.sidebar.text_input("Enter hashtag or string to be searched : ","")
     noOfSearchTerms = st.sidebar.text_input("Choose Number of Tweets to Analyse:")
     result=""
-    if st.sidebar.button("predict"):
+    if st.sidebar.button("Predict"):
         result=cal(searchTerm,noOfSearchTerms)
     st.success("Result is : {}".format(result))
     st.write("Press About Button to know more")
