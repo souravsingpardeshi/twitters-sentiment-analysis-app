@@ -94,9 +94,10 @@ def main():
     result=""
     if st.sidebar.button("Predict"):
         result=cal(searchTerm,noOfSearchTerms)
-    st.success("Result is : {}".format(result))
-    st.write("Press About Button to know more")
+        st.success("Result is : {}".format(result))
+        st.write("Press About Button to know more")
     if st.sidebar.button("About me"):
+        st.balloons()
         st.header("This app is created by Souravsing S. Pardeshi")
         st.write("follow me on github: https://github.com/souravsingpardeshi",":sunglasses:")
     st.text("This project is created by souravsing with 🖤")
