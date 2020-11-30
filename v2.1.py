@@ -88,7 +88,7 @@ def main():
     unsafe_allow_html=True,
     )
     dataset_name = st.sidebar.selectbox("Select which results you want to see :",("All","Positive","Negative"))
-    st.write(dataset_name)
+    #st.write(dataset_name)
     searchTerm = st.sidebar.text_input("Enter hashtag or string to be searched : ","")
     noOfSearchTerms = st.sidebar.text_input("Choose Number of Tweets to Analyse:")
     result=""
