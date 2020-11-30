@@ -94,6 +94,7 @@ def main():
     result=""
     if st.sidebar.button("Predict"):
         result=cal(searchTerm,noOfSearchTerms)
+        st.balloons()
         st.success("Result is : {}".format(result))
         st.write("Press About Button to know more")
     if st.sidebar.button("About me"):
