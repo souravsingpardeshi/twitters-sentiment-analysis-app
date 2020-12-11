@@ -71,22 +71,6 @@ def main():
         with open(file_name) as f:
             st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
     local_css("style.css")
-    st.markdown(
-    """
-    <style>
-    .sidebar .sidebar-content {
-    background-image:linear-gradient(#43C6AC,#191654) !important;
-    color:white;
-    display:flex;
-    flex-direction:column;
-    font-family:arial;
-    font-weight:900;
-    font-size:24;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-    )
     dataset_name = st.sidebar.selectbox("Select which results you want to see :",("All","Positive","Negative"))
     #st.write(dataset_name)
     searchTerm = st.sidebar.text_input("Enter hashtag or string to be searched : ","")

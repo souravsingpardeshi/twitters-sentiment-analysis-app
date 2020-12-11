@@ -1,8 +1,20 @@
 body{
-color:white;
-background-color:#141E30;
-display:flex;
-font-family:arial;
-font-weight:900;
-font-size:24;
-}
+    color:white;
+    background-color:#141E30;
+    display:flex;
+    overflow: hidden;
+    font-family:arial;
+    font-weight:900;
+    font-size:24;
+    overflow:hidden;
+    }
+.css-1aumxhk {
+    background-image:linear-gradient(#43C6AC,#191654);
+    color: #302b63;
+    font-family:arial;
+    font-weight:900;
+    font-size:36;
+    padding:10px;
+    overflow:hidden;
+        }
+    
